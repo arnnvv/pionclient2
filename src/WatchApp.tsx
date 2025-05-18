@@ -1,8 +1,7 @@
 import { useEffect, useRef, type JSX } from "react";
 import Hls from "hls.js";
 
-const HLS_STREAM_URL =
-  process.env.NEXT_PUBLIC_HLS_URL || "http://localhost:8080/hls/stream.m3u8";
+const HLS_STREAM_URL = "http://localhost:8080/hls/stream.m3u8";
 
 export function WatchApp(): JSX.Element {
   const videoRef = useRef<HTMLVideoElement>(null);

@@ -7,8 +7,7 @@ import type {
 } from "./../types";
 import { v4 } from "./../uuid";
 
-const WS_URL_BASE =
-  process.env.NEXT_PUBLIC_WS_URL || "ws://localhost:8080/ws/stream";
+const WS_URL_BASE = "ws://localhost:8080/ws/stream";
 
 export function StreamApp(): JSX.Element {
   const [localStream, setLocalStream] = useState<MediaStream | null>(null);
